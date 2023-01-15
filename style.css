@@ -1,0 +1,78 @@
+
+/*------   google "font" choose your preference and import  ------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); 
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+	font-family:'Roboto',sens-serif;
+	margin: 0;
+	
+	display:flex;
+	align-items:center; /*align horizontaly*/
+	justify-content:center; /*---align vertical----*/
+
+	height:100vh; 
+	overflow:hidden;  /*  no scrollbar appears */
+}
+
+
+.container{
+	display:flex;  /* turns it in a flex row*/
+	width:90vw;
+}
+
+.panel{
+	/* position the image inside the box */
+	background-size:cover;
+	background-position:center;
+
+	height:80vh;
+	border-radius:50px;
+	color:white;  /* color of the h3 */
+	cursor:pointer;    
+	flex:0.4;     /*  fixes the size  */
+	margin:10px;   /*   seperates  them   */
+	position:relative;  /*   because i want to make the letters absolute   */
+	transition:0.6s ease-out; /* when change class to active */
+}
+
+.panel h3{
+	position:absolute;
+	bottom:20px;
+	left:20px;
+
+	margin:0;
+	font-size:24px;
+	opacity:0;  /*  makes them invisible  */
+}
+
+.active.panel{
+	flex:5;
+}
+
+.active.panel h3{
+	opacity:1;
+	transition:ease-in 0.6s;
+}
+
+
+
+/*  when the screen gets too small
+	- make bigger the container from 90vw to 100vw
+	- hide the two last elements   */
+
+@media(max-width:600px){
+	.container{
+		width:100vw;
+	}
+
+	/* using pseudo selector in order to delete the two last images */
+	.panel:nth-of-type(4), .panel:nth-of-type(5){
+		display:none;
+	}
+}
