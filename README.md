@@ -32,7 +32,7 @@ Techniques that used:	In HTML
 			when an image gets pressed make every image "not activated"
 			make "activated" the image that pressed
 					
-			 Usefull: -  x.addEventListener('click', function() {
+			Usefull: -  x.addEventListener('click', function() {
 					   ____commands_______
 				      })
  				  -  x.classList.add('name of class')
