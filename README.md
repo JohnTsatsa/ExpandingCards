@@ -22,8 +22,12 @@ Make "activated" the image that pressed
 ## Techniques that used
 ### CSS
 ```flex:"number";```  
+  
+  
 ```@media(max-width:600px){changes on the class}```  
 perform changes when the screen gets smaller than 600px  
+  
+  
 ```.class:nth-of-type(3)```    
 pseudo selector 
 					
