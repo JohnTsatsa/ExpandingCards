@@ -1,4 +1,5 @@
-# Expanding Cards	
+# Expanding Cards
+### Demo https://johntsatsa.github.io/ExpandingCards/
 ## Description of project
 The project contains 5 images with a header as caption in it.  
 The page starts with the first image expanded and makes visible its caption.The others pictures are smaller.  
